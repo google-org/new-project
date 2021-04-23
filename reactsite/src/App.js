@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import CountButton from "./components/CountButton/CountButton";
+import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      fetch("https://fakestoreapi.com/products")
+        .then((res) => res.json())
+        .then((json) => setProducts(json));
+    }, 5000);
+  }, []);
+
+  console.log("re-rendered app");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {products.length > 0 ? <SearchBar products={products} /> : "Loading..."}
+      {/* <CountButton incrementBy={1} buttonColor={"blue"} /> */}
+      <CountButton incrementBy={3} buttonColor={"green"} />
     </div>
   );
 }

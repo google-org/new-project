@@ -1,3 +1,14 @@
+Note from Andy: everything below the line of stars (*****) was created when I ran `nest new nestjs-app`. To run the app, do the following:
+
+```bash
+$ yarn install
+$ yarn start
+```
+
+You should then be able to connect to the server by navigating to localhost:3000 in a browser.
+
+*******
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>

@@ -3,3 +3,6 @@ coverage/
 
 # "distributable" files, which are created by some yarn build process
 dist/
+
+# Dependencies installed by running `yarn install`
+node_modules/

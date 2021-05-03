@@ -5,4 +5,4 @@ $ yarn install
 $ yarn start
 ```
 
-You should then be able to connect to the server by navigating to localhost:3000 in a browser.
+You should then be able to connect to the server by navigating to http://localhost:3000 in a browser.

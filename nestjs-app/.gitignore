@@ -1,0 +1,5 @@
+# Test coverage files, generated when you run `yarn test:cov`
+coverage/
+
+# "distributable" files, which are created by some yarn build process
+dist/

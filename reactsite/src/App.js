@@ -17,7 +17,6 @@ function App() {
   return (
     <div className="App">
       {products.length > 0 ? <SearchBar products={products} /> : "Loading..."}
-      {/* <CountButton incrementBy={1} buttonColor={"blue"} /> */}
       <CountButton incrementBy={3} buttonColor={"green"} />
     </div>
   );

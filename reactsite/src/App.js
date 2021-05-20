@@ -4,6 +4,8 @@ import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
   const [products, setProducts] = useState([]);
+  // comments comments
+  // comments
 
   useEffect(() => {
     setTimeout(() => {

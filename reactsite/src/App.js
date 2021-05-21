@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import CountButton from "./components/CountButton/CountButton";
 import SearchBar from "./components/SearchBar/SearchBar";
 
+//adding comment
+
 function App() {
   const [products, setProducts] = useState([]);
 
